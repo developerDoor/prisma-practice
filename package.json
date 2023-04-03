@@ -1,0 +1,30 @@
+{
+  "name": "prisma-practice",
+  "version": "1.0.0",
+  "description": "[해당 유튜브 영상](https://www.youtube.com/watch?v=RebA5J-rlwg&t=207s)을 보고 연습했습니다.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon sciprt.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerDoor/prisma-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerDoor/prisma-practice/issues"
+  },
+  "homepage": "https://github.com/developerDoor/prisma-practice#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.12.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0"
+  }
+}
