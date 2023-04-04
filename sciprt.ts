@@ -5,23 +5,12 @@ const prisma = new PrismaClient()
 // 그렇지 않을 경우 너무 많은 연결로 인해 DB가 정체될 수 있다.
 
 async function main() {
-    await prisma.user.deleteMany()
-    const user = await prisma.user.create({
-        data: {
-            name: "moon",
-            email: "moon@test.com",
-            age: 29,
-            userPreference: {
-                create: {
-                    emailUpdates: true,
-                },
-            },
-        },
-        include: {
-            userPreference: true,
+
+    const user = await prisma.user.findMany({
+        where: {
+            name: "Sally"
         }
     })
-
     console.log(user)
 }
 
